@@ -1,4 +1,4 @@
-// Include Firebase SDK in HTML:
+// Firebase SDK example for HTML/JS
 // <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
 // <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
 // <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
@@ -14,7 +14,6 @@ const firebaseConfig = {
   measurementId: "G-B4729784Q4"
 };
 
-// Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
