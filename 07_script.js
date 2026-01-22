@@ -1,7 +1,5 @@
-// Simple front-end demo storage (no backend)
-let users = [
-  {email:'admin@school.com', password:'admin123', role:'admin'}
-];
+// Simple demo arrays
+let users = [{email:'admin@school.com', password:'admin123', role:'admin'}];
 let attendance = [];
 let messages = [];
 
@@ -15,7 +13,6 @@ function login() {
     if(role==='admin') window.location.href='02_admin.html';
     if(role==='teacher') window.location.href='03_teacher.html';
     if(role==='student') window.location.href='04_student.html';
-
   } else {
     alert('Invalid credentials');
   }
@@ -23,7 +20,7 @@ function login() {
 
 function logout() {
   localStorage.removeItem('currentUser');
-  window.location.href='index.html';
+  window.location.href='01_index.html';
 }
 
 // Admin functions
@@ -55,7 +52,7 @@ function sendMessage() {
   }
 }
 
-// Student page
+// Student page display
 if(document.getElementById('attendanceList')) {
   document.getElementById('attendanceList').innerHTML = 'Present: ' + attendance.join(', ');
 }
