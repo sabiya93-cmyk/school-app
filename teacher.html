@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Teacher Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+    <hr>
+    <h3>Mark Attendance</h3>
+    <input type="text" id="studentName" placeholder="Student Name">
+    <button onclick="markAttendance()">Mark Present</button>
+    <div id="attendanceList"></div>
+    <hr>
+    <h3>Send Message</h3>
+    <input type="text" id="messageText" placeholder="Message">
+    <button onclick="sendMessage()">Send</button>
+    <div id="messagesList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
