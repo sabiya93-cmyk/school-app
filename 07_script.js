@@ -12,9 +12,10 @@ function login() {
   const user = users.find(u => u.email===email && u.password===password && u.role===role);
   if(user) {
     localStorage.setItem('currentUser', JSON.stringify(user));
-    if(role==='admin') window.location.href='admin.html';
-    if(role==='teacher') window.location.href='teacher.html';
-    if(role==='student') window.location.href='student.html';
+    if(role==='admin') window.location.href='02_admin.html';
+    if(role==='teacher') window.location.href='03_teacher.html';
+    if(role==='student') window.location.href='04_student.html';
+
   } else {
     alert('Invalid credentials');
   }
