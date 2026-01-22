@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin!</p>
+    <button onclick="logout()">Logout</button>
+    <hr>
+    <h3>Create User</h3>
+    <input type="text" id="newEmail" placeholder="Email">
+    <input type="password" id="newPassword" placeholder="Password">
+    <select id="newRole">
+      <option value="teacher">Teacher</option>
+      <option value="student">Student</option>
+    </select>
+    <button onclick="createUser()">Create</button>
+    <div id="usersList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
